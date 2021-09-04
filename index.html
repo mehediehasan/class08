@@ -26,16 +26,17 @@
     <link rel="stylesheet" href="css/media.css">
 
     <!-- Title Section -->
-    <title>Mehedi Boilerplate or Starter Template</title>
+    <title>AB Shop</title>
 </head>
 
 <body>
     <section id="header" class="bg bg-dark">
-        <div class="container text-info text-center py-5">
+        <div class="container text-danger text-center py-5">
             <p>Welcome to</p>
             <h1>AB Shop</h1>
         </div>
     </section>
+
 
     <!-- Sign in section -->
     <section id="logintitle" class="bg-danger">
@@ -57,7 +58,7 @@
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
 
-                <button id="" onclick="login();" class="btn btn-primary">Login</button>
+                <button id="" onclick="login()" class="btn btn-danger">Login</button>
             </form>
         </div>
     </section>
@@ -84,7 +85,7 @@
                                 of the card's content.</p>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="#" class="btn btn-primary" onclick="buy1();">Buy Now</a>
+                                    <button class="btn btn-danger" onclick="buy1();">Buy Now</button>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="text-end">$<span id="price1">30</span></h3>
@@ -106,7 +107,7 @@
                                 of the card's content.</p>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                    <button class="btn btn-danger" onclick="buy2();">Buy Now</button>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="text-end">$<span id="price2">50</span></h3>
@@ -128,7 +129,7 @@
                                 of the card's content.</p>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                    <button class="btn btn-danger" onclick="buy3();">Buy Now</button>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="text-end">$<span id="price3">60</span></h3>
@@ -146,7 +147,7 @@
 
     <!-- Cart Content -->
 
-    <section id="card" class="bg-danger">
+    <section id="cart" class="bg-danger">
         <div class="container text-light text-center py-2">
             <h2>Your Cart total : $<span id="cartTotal">40</span></h2>
         </div>
@@ -167,10 +168,13 @@
 
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <p class="card-text" id="cartDetails">Some quick example text to build on the card
+                                    <h3 class="card-title" id="cartTitle">Title</h3>
+                                    <p class="card-text text-black-50" id="cartDetails">Some quick example text to build
+                                        on the card
                                         title and make up
                                         the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                    <h5 class="text-danger">$<span id="cartPrice">25</span></h5>
+                                    <button id="" class="btn btn-danger" onclick="finishMsg();">Buy Now</button>
 
                                 </div>
                             </div>
@@ -182,6 +186,10 @@
 
         </div>
     </section>
+
+
+
+    <h1 class="text-center text-danger" id="finishMsg">Thank You! We will deliver your product within 24 hours</h1>
 
 
 
